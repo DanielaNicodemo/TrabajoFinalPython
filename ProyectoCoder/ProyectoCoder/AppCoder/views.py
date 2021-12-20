@@ -5,3 +5,11 @@ from django.http import HttpResponse
 def inicio(request):
    # return HttpResponse("Esto es una prueba del inicio")
    return render(request, "AppCoder/inicio.html")
+
+def makeup(request):
+   
+   return render(request, "AppCoder/makeup.html")
+
+def skincare(request):
+   
+   return render(request, "AppCoder/skincare.html")
