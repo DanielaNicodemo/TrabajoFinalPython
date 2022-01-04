@@ -29,9 +29,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="{% url 'Makeup' %}">MAKEUP</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'Skincare' %}">SKINCARE</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'Contacto' %}">CONTACTO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'inicio' %}">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'makeup' %}">MAKEUP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'skincare' %}">SKINCARE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contacto' %}">CONTACTO</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +46,7 @@
                         {% block contenidoQueCambia2 %}
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">MAKEUP & SKINCARE</h2>
                         {% endblock %}
-                        <a class="btn btn-primary" href="{% url 'Inicio' %}">Productos</a>
+                        <a class="btn btn-primary" href="{% url 'productos' %}">Productos</a>
                     </div>
                 </div>
             </div>

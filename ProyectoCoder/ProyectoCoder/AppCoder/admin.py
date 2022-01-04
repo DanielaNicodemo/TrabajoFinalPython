@@ -5,6 +5,6 @@ from .models import *
 
 admin.site.register(Contacto)
 
-admin.site.register(Labiales)
+admin.site.register(Producto)
 
-admin.site.register(Cremas)
+admin.site.register(Categoria)
