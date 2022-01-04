@@ -14,24 +14,25 @@ class Contacto(models.Model):
 
 
 
-class Labiales(models.Model):
+class Producto(models.Model):
     nombre = models.CharField(max_length=40)
     stock= models.IntegerField()
     precio= models.IntegerField()
+    categoria = models.CharField(max_length=20)
+    URLimagen = models.CharField(max_length=160)
+    descripcion = models.TextField()
 
     def __str__(self):
 
-       return f"LABIAL: {self.nombre} STOCK: {self.stock} PRECIO: {self.precio}"
+       return f"NOMBRE: {self.nombre} STOCK: {self.stock} PRECIO: {self.precio} CATEGORIA: {self.categoria} URLIMAGEN: {self.URLimagen} DESCRIPCION: {self.descripcion}"
 
-
-class Cremas(models.Model):
+class Categoria(models.Model):
     nombre = models.CharField(max_length=40)
-    stock= models.IntegerField()
-    precio= models.IntegerField()
+    descripcion = models.TextField()
 
     def __str__(self):
 
-       return f"CREMA: {self.nombre} STOCK: {self.stock} PRECIO: {self.precio}"  
+       return f"NOMBRE: {self.nombre} DESCRIPCION: {self.descripcion}"
 
   
     
